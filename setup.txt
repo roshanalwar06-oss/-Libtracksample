@@ -1,0 +1,18 @@
+Lib Track – Digital Library Web Application
+
+Setup Instructions for XAMPP:
+
+1. Start XAMPP and ensure Apache and MySQL are running.
+2. Copy the entire LibTrack folder to c:/xampp/htdocs/.
+3. Open your browser and go to http://localhost/phpmyadmin.
+4. Click 'Import', select libtrack.sql from LibTrack folder, and import it to create the database and sample data.
+5. Open http://localhost/LibTrack/ in your browser.
+6. Login with:
+   - Admin: username: admin, password: (hashed, set new password in DB or use password_hash in PHP)
+   - Member: username: member1 or member2, password: (hashed, set new password in DB or use password_hash in PHP)
+7. Use the web interface to manage books, members, issue/return books, and search.
+
+Note:
+- If you need to set a new password, use PHP's password_hash function and update the users table.
+- All files are in the root LibTrack folder for easy access.
+- For any issues, check config.php for database connection settings.
